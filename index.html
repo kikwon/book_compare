@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>책 검색</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="search-container">
+        <h1>책 검색</h1>
+        <input type="text" id="book-title" placeholder="책 제목 또는 저자 검색">
+        <button onclick="searchBooks()">검색</button>
+    </div>
+
+    <div id="results">
+        <h2>검색 결과</h2>
+        <div id="korean-books">
+            <h3>한국어 책</h3>
+            <ul id="korean-list"></ul>
+        </div>
+        <div id="english-books">
+            <h3>영어 책</h3>
+            <ul id="english-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
